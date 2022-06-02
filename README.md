@@ -19,12 +19,13 @@ Using models as follows:
 
 ## download pretrained weight
 download from remote or [this link](https://drive.google.com/file/d/1D7IMwgTxTNmhAXoNPMv0ZMXsXxwn2cc9/view?usp=sharing)
-```
+```zsh
 # download pretrained weight from remote to model foloder
 ./download.sh
 ```
 
 ## generate wav vector from text as label
+```zsh
 # sample predict text to wav
 python3 predict_tts.py -f coco_label.txt
 
@@ -40,22 +41,14 @@ python3 generate_wav_label.py
 
 ## accuracy 
 
-<img width="836" alt="accu" src="https://user-images.githubusercontent.com/48679574/146722190-89df37b9-4bab-4bbf-9021-4ef6a63cf676.png">
-
+<img width="891" alt="model-exp" src="https://user-images.githubusercontent.com/48679574/171634982-590b8e21-f6ba-48b3-a1f1-27918041e58b.png">
 
 ## models output expressions
 
-<img width="891" alt="model-exp" src="https://user-images.githubusercontent.com/48679574/146722197-1bb29d4a-d5e2-4518-8643-ff0760f51aca.png">
+<img width="836" alt="accu" src="https://user-images.githubusercontent.com/48679574/171634992-6a04accf-3356-47ae-a76c-19380c2f94ff.png">
+
 
 # Demo 
-if using remote pretrained weight
-```
-python3 generate_wav_label.py
-```
-
-if not, downoad [pretrained model](https://drive.google.com/file/d/1fgaAa0TuLciES0Onnn2XmX1RyN8i-5C0/view?usp=sharing) and set model folder
-, prepare label.txt and run below script.
-details are depend on ```generate_wav_label.py```
 
 ```python
 import numpy as np
