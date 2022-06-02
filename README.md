@@ -9,10 +9,32 @@
 
 generate robust (high-dimensional) label such as wav, Glove matrix.
 
+It convert text to wav as label.
 To improve classification task, using not just index label but robust (high-dimensional) label is better way.
 
 Using models as follows:
 - [Transfomer-TTS](https://github.com/as-ideas/TransformerTTS)
+
+# How to start
+
+## download pretrained weight
+download from remote or [this link](https://drive.google.com/file/d/1D7IMwgTxTNmhAXoNPMv0ZMXsXxwn2cc9/view?usp=sharing)
+```
+# download pretrained weight from remote to model foloder
+./download.sh
+```
+
+## generate wav vector from text as label
+# sample predict text to wav
+python3 predict_tts.py -f coco_label.txt
+
+# sample generate wav label vector
+python3 demo.py
+
+# save label.txt to npy or wav file
+python3 generate_wav_label.py 
+```
+
 
 # Roubust(high-dimensional) label effect
 
